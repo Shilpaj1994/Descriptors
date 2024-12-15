@@ -21,7 +21,6 @@ def test_last_login_default():
 
 def test_cache_management():
     manager = UserProfileManager()
-    print(f"Manager instance: {UserProfileManager.__dict__}")
     manager.username = "cache_test"
     manager.email = "test@example.com"
     uid = id(manager)

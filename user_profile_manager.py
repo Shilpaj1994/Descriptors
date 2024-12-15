@@ -78,7 +78,6 @@ class ValidatedProperty:
         Raises:
             ValueError: If the validator rejects the value
         """
-      #   print(f"Setting {self.name} to {value}")
         if self.validator:
             self.validator(value, self.name)
         self.values[instance] = value
